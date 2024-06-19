@@ -42,8 +42,8 @@ while que == 'да':
   num2 = "".join(str(num2[0]) for num2[0] in num2)  # Преобразуем список в строку
 
   while ch: 
-    rec2 = input('\nПроверить полученный пароль вручную или автоматически? (Руч/Авто):\n> ')  # Выбираем способ проверки
-    rec = rec2.lower()  # Правим регистр
+    rec = input('\nПроверить полученный пароль вручную или автоматически? (Руч/Авто):\n> ')  # Выбираем способ проверки
+    rec = rec.lower()  # Правим регистр
     if rec == 'авто':  # Автопроверка
       while ch:
         not_check = True # Флаг неверного результата
@@ -71,7 +71,7 @@ while que == 'да':
   Q = True
   while Q:
     que2 = input('\nЖелаете повторить? (Да/Нет):\n> ')
-    que = que2.lower()
+    que2 = que2.lower()
     if que2 == 'да':
       que = que2
       break
@@ -79,7 +79,7 @@ while que == 'да':
       que = que2
       break
     else:
-      print('Вы ввели неверное значение!')
+      print('\nВы ввели неверное значение!')
       continue  
   print('\n\n\n')
 
