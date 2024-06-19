@@ -67,9 +67,8 @@ while que == 'да':
       continue
 
   # Повторить?
-
-  Q = True
-  while Q:
+  
+  while True:
     que2 = input('\nЖелаете повторить? (Да/Нет):\n> ')
     que2 = que2.lower()
     if que2 == 'да':
